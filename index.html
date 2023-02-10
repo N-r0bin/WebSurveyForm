@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+     <title>Survey Form</title>
+     <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+        <form id="survey-form">
+            <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+            
+            <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+            
+            <label id="number-label">Age <input id="number" type="number" min="12" max="100" placeholder="Enter your age" required/></label>
+            
+            <label>Why are you using our program?
+                <select id="dropdown">
+                  <option value="">(select one)</option>
+                  <option value="1">Education purpose</option>
+                  <option value="2">Job purpose</option>
+                  <option value="3">Personal purpose</option>
+                </select>
+            </label>
+
+            <label>Would you recommend us?
+                <label for="definitely"><input  id="definitely" type="radio" name="recommend" class="inline" value="definitely"/> Definitely</label>
+                <label for="maybe"><input id="maybe"  type="radio" name="recommend" class="inline" value="maybe"/> Maybe</label>
+            </label>
+            
+              
+            <label>What topics are you interested in? (Check all that apply) 
+                <label><input type="checkbox" name="c1" value="cs"/> Cyber Security </label>
+                <label><input type="checkbox" name="c2" value="ml"/> Machine Learning </label>
+                <label><input type="checkbox" name="c3" value="ai"/> Artificial Intelligence </label>
+                <label></label><input type="checkbox" name="c4" value="cg"/> Cryptography </label>
+                <label><input type="checkbox" name="c5" value="mp"/> Mobile Programming </label>
+                <label><input type="checkbox" name="c6" value="wp"/> Web Programming </label>
+                <label><input type="checkbox" name="c5" value="mp"/> Mobile Programming </label>
+                <label><input type="checkbox" name="c6" value="dd"/> Database Development </label>
+                <label><input type="checkbox" name="c7" value="os"/> Operating System </label>
+            </label>
+
+            <label>Do you have any suggestions?
+                <textarea class="commentArea" placeholder="Enter your suggestion here..."></textarea>
+            </label>
+
+            <input type="submit" value="submit" id="submit"/>
+
+        </form>
+
+    </body>
+</html>
